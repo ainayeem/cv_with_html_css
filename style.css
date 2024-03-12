@@ -1,0 +1,77 @@
+.container {
+  /* border: 1px solid black; */
+  padding-right: 40vh;
+  padding-left: 40vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.leftSection {
+  border-right: 1px solid black;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 5vh;
+}
+.rightSection {
+  /* border: 1px solid black; */
+  margin-top: 5vh;
+}
+.proImg img {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+.italic-text {
+  font-style: italic;
+}
+.contactInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.contactInfo img {
+  height: 20px;
+  margin-right: 10px;
+}
+.textBold {
+  font-weight: bold;
+}
+
+/* GHDFRG */
+#accordion li {
+  list-style: none;
+  /* width: 100%; */
+  margin-bottom: 10px;
+  margin-right: 200px;
+  /* background: #aaacaf; */
+  /* padding: 5px; */
+  border-radius: 4px;
+}
+#accordion li label {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}
+#accordion li label span {
+  transform: rotate(90deg);
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+}
+#accordion label + input[type="radio"] {
+  display: none;
+}
+#accordion .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+}
