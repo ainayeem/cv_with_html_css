@@ -1,77 +1,154 @@
-.container {
-  /* border: 1px solid black; */
-  padding-right: 40vh;
-  padding-left: 40vh;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-.leftSection {
-  border-right: 1px solid black;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 5vh;
-}
-.rightSection {
-  /* border: 1px solid black; */
-  margin-top: 5vh;
-}
-.proImg img {
-  height: 200px;
-  width: 200px;
-  display: block;
-  margin: 0 auto;
-}
-.italic-text {
-  font-style: italic;
-}
-.contactInfo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-}
-.contactInfo img {
-  height: 20px;
-  margin-right: 10px;
-}
-.textBold {
-  font-weight: bold;
-}
+@media only screen and (min-width: 769px) {
+  .container {
+    border: 1px solid #dddddd;
+    /* padding-right: 40vh;
+  padding-left: 40vh; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .leftSection {
+    /* border-right: 1px solid black; */
+    /* margin-right: 30px; */
+    padding-right: 30px;
+    margin-left: 30px;
+    margin-top: 5vh;
+    margin-bottom: 30px;
+    /* background-color: rebeccapurple; */
+  }
+  .leftSideColor {
+    background-color: #dddddd;
+  }
+  .rightSection {
+    /* border: 1px solid black; */
+    margin-top: 5vh;
+    padding-left: 30px;
+  }
+  .proImg img {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+  .italic-text {
+    font-style: italic;
+  }
+  .contactInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .contactInfo img {
+    height: 20px;
+    margin-right: 10px;
+  }
+  .textBold {
+    font-weight: bold;
+  }
 
-/* GHDFRG */
-#accordion li {
-  list-style: none;
-  /* width: 100%; */
-  margin-bottom: 10px;
-  margin-right: 200px;
-  /* background: #aaacaf; */
-  /* padding: 5px; */
-  border-radius: 4px;
+  /* GHDFRG */
+  #accordion li {
+    list-style: none;
+    /* width: 100%; */
+    margin-bottom: 10px;
+    margin-right: 200px;
+    /* background: #aaacaf; */
+    /* padding: 5px; */
+    border-radius: 4px;
+  }
+  #accordion li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+  }
+  #accordion li label span {
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+  }
+  #accordion label + input[type="radio"] {
+    display: none;
+  }
+  #accordion .content {
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  #accordion label + input[type="radio"]:checked + .content {
+    max-height: 400px;
+  }
 }
-#accordion li label {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-  color: rgb(0, 0, 0);
-}
-#accordion li label span {
-  transform: rotate(90deg);
-  font-size: 22px;
-  color: rgb(0, 0, 0);
-}
-#accordion label + input[type="radio"] {
-  display: none;
-}
-#accordion .content {
-  padding: 0 10px;
-  line-height: 26px;
-  max-height: 0px;
-  overflow: hidden;
-  transition: max-height 0.5s;
-}
-#accordion label + input[type="radio"]:checked + .content {
-  max-height: 400px;
+@media only screen and (max-width: 768px) {
+  .container {
+    background-color: #dddddd;
+    padding: 5%;
+  }
+  .proImg img {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+  .italic-text {
+    font-style: italic;
+  }
+  .contactInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .contactInfo img {
+    height: 20px;
+    margin-right: 10px;
+  }
+  .textBold {
+    font-weight: bold;
+  }
+
+  /* GHDFRG */
+  #accordion li {
+    list-style: none;
+    /* width: 100%; */
+    margin-bottom: 10px;
+    margin-right: 200px;
+    /* background: #aaacaf; */
+    /* padding: 5px; */
+    border-radius: 4px;
+  }
+  #accordion li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+  }
+  #accordion li label span {
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+  }
+  #accordion label + input[type="radio"] {
+    display: none;
+  }
+  #accordion .content {
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  #accordion label + input[type="radio"]:checked + .content {
+    max-height: 400px;
+  }
 }
